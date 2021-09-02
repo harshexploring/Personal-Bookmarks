@@ -1,0 +1,231 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color:rgba(86, 255, 255, 0.849);
+}
+.page{
+    height:100vh;
+}
+/* container */
+.container{
+    background-image: linear-gradient(to right,rgb(35, 193, 255),white);
+    margin:0px;
+    padding:5px;
+    padding-left:0px;
+   
+    
+}
+/* navbar */
+.navbar{
+    height:230px;
+    
+    background-color: rgb(4, 29, 114);
+    
+    padding:10px;
+    color:white;
+  
+  
+   
+}
+/* //harshjha */
+.part{
+    text-align:center;
+    width:45%;
+    padding:10px;
+    position:absolute;
+    top:79px;
+    
+    display:block;
+    margin:auto;
+    background-color: rgb(125, 4, 150);
+  
+    /* text-shadow:2px 2px yellow; */
+    
+    
+}
+/* head1 */
+.head1 h3{
+    display:flex;
+    font-family: 'Kaisei Tokumin', serif;
+}
+
+
+.head1{
+    display:flex;
+    align-items:center;
+    color:black;
+    margin:10px 12px;
+    margin-left:0px;
+    margin-bottom:0px;
+    padding:20px;
+    border:2px solid black;
+   background-image:linear-gradient(to right,#f85167 , #FFDDE1);
+    width:24%;
+    height:50px;
+    justify-content: space-between;
+    font-size:20px;
+}
+.content{
+    border:3px solid black;
+    background-image: linear-gradient(to right, #387af3 , #0df3f3);
+    display:grid;
+    row-gap:5px;
+    width:60em;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    height:auto;
+    padding:15px;
+    /* overflow:hidden; */
+
+    
+}
+.part h3{
+    position:relative;
+    display:block;
+    margin:auto;
+    top:180px;
+}
+.part h3{
+    display:none;
+}
+button{
+    font-size:25px;
+    border:4px solid white;
+  
+    transition-duration:0.5s;
+}
+
+.box{
+    height:30%;
+    width:200px;
+    font-size:20px;
+    display:flex;
+    color:white;
+    padding:15px 10px;
+    border:3px solid white;
+    border-radius:5px;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    transition-duration:0.5s;
+    background-color: rgb(59, 51, 50);
+}
+.box a{
+    text-decoration:none;
+    color:white;
+    font-family: 'STIX Two Text', serif;
+    transition-duration:1s;
+    transition-timing-function: ease-in-out;
+}
+.input button{
+    border:2px solid black;
+    padding:5px;
+    margin:5px;
+    font-size:0.6em;
+}
+.form{
+    
+    text-align:center;
+    display:block;
+    width:50%;
+    display:block;
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    justify-content:center;
+   
+    border:3px solid rgb(17, 14, 16);
+}
+.inputs{
+    display:block;
+    padding:10px;
+    margin:auto;
+    background-color: rgb(218, 198, 235);
+
+}
+.footer{
+    height:100px;
+     display: flex;
+     align-items:center;
+     justify-content: center;
+    color:white;
+    background-color:rgb(4, 76, 124);
+
+}
+
+/* HOVER */
+.part:hover{
+    background-color: rgb(104, 60, 102);
+}
+.box:hover{
+    background-color:black;
+    transform:translateY(5px);
+}
+.box a:hover{
+    text-decoration:underline;
+}
+
+
+
+
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+/* media queries */
+@media only screen and (max-width:480px){
+    .head1{
+        width:80%;
+    }
+    .content{
+        display:grid;
+        grid-template-columns:1fr;
+        height:auto;
+        width:90%;
+        align-items:center;
+ 
+    }
+    .part h3{
+        display:block;
+    }
+    
+    .box{
+        margin:auto;
+    }
+    .container{
+        width:100%;
+    }
+    .navbar{
+        background-image:url('all\ stones.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+  
+    background-position:center;
+    }
+    .part{
+        width:80%;
+        height:10%;
+        font-size:0.75rem ;
+        position:absolute;
+        width:100%;
+        top: -8.9px;
+        left:0px;
+        right:0px;
+        margin-left:0px;
+        margin-right:0px;
+    }
+    
+
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+    .content{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+    .container{
+        width:100%;
+    }
+}
